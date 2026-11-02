@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>AI-UGC ролики без съёмок — тест NetWorX</title>
+<style>
+:root{--bg:#0f1012;--card:#1a1c20;--tx:#eceae6;--mut:#9a9890;--ac:#ff6a2b;--ok:#4cc38a;--warn:#f2b84b;--bad:#ef5b5b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 -apple-system,Segoe UI,Roboto,Inter,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:28px;line-height:1.15;margin:8px 0 6px}h2{font-size:21px;margin:34px 0 10px}h3{font-size:17px;margin:18px 0 6px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ac);font-weight:700}
+.mut{color:var(--mut)}.card{background:var(--card);border-radius:14px;padding:14px 16px;margin:12px 0}
+img,video{width:100%;border-radius:12px;display:block}
+.vid{max-width:380px;margin:0 auto}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.grid4 figure{margin:0}.grid4 figcaption{font-size:12px;color:var(--mut);text-align:center;margin-top:4px}
+@media(max-width:520px){.grid4{grid-template-columns:repeat(2,1fr)}}
+.two{display:grid;grid-template-columns:1fr 2fr;gap:10px;align-items:start}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:7px 6px;border-bottom:1px solid #2a2d33;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+.scroll{overflow-x:auto}
+ul{padding-left:20px}li{margin:4px 0}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.price{font-size:24px;font-weight:800}.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}@media(max-width:600px){.pk{grid-template-columns:1fr}}
+.pk .card{margin:0;border:1px solid #2a2d33}.pk .best{border-color:var(--ac)}
+small a,a{color:#8fb6ff}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px}.flow span{background:#24272d;border-radius:8px;padding:5px 9px}.flow b{color:var(--ac)}
+</style></head><body><main>
+<span class="tag">NetWorX · внутренний тест · 02.11.2026</span>
+<h1>AI-UGC ролики для магазинов — без съёмок и без моделей</h1>
+<p class="mut">Тест на товаре клиента-магазина (складной стул). Все люди в кадре — сгенерированные вымышленные персонажи. Страница не для клиентов.</p>
+
+<h2>1. Итоговый ролик (15 сек, 9:16)</h2>
+<div class="vid"><video src="media/ugc-test.mp4" poster="media/poster.jpg" controls playsinline muted loop preload="metadata"></video></div>
+<p class="mut" style="text-align:center;font-size:14px">4 клипа image-to-video по 4 сек + склейка ffmpeg + текстовые плашки. Без музыки.</p>
+
+<h2>2. Вход → раскадровка</h2>
+<div class="two">
+<figure style="margin:0"><img src="media/original.jpg" alt="Оригинальное фото товара"><figcaption class="mut" style="font-size:12px;text-align:center">Вход: 1 фото с сайта</figcaption></figure>
+<figure style="margin:0"><img src="media/storyboard.jpg" alt="Раскадровка 3x3"><figcaption class="mut" style="font-size:12px;text-align:center">/storyboard → сетка 9 ракурсов</figcaption></figure>
+</div>
+
+<h2>3. Ключевые кадры (стартовые для видео)</h2>
+<div class="grid4">
+<figure><img src="media/k3.jpg" alt=""><figcaption>MACRO</figcaption></figure>
+<figure><img src="media/k1.jpg" alt=""><figcaption>HERO</figcaption></figure>
+<figure><img src="media/k2.jpg" alt=""><figcaption>ON MODEL</figcaption></figure>
+<figure><img src="media/k4.jpg" alt=""><figcaption>STORAGE</figcaption></figure>
+</div>
+
+<h2>4. Честная оценка теста</h2>
+<div class="card"><ul>
+<li><b class="ok">Цвет и материал держатся:</b> тон дерева «тёмный бурштин» и серо-коричневая ткань похожи на оригинал во всех кадрах; макро-текстура «ёлочкой» — лучший кадр.</li>
+<li><b class="warn">Форма — почти:</b> A-образный каркас узнаваем, но в раскадровке пропорции «гуляют» (ножки тоньше/длиннее, кадр FOLDING показывает неправдоподобную схему складывания). На облёте камеры (HERO) геометрия ножек слегка «плывёт» между кадрами.</li>
+<li><b class="warn">Складывание:</b> механизм модель не понимает — сам момент складывания не генерировали (будет брак). Для «как складывается» нужен реальный 3-сек футаж от клиента.</li>
+<li><b class="ok">Руки/лицо:</b> в выбранных кадрах пальцы нормальные (5), лицо и мимика естественные; глоток кофе без артефактов. В сетке 3×3 рука на кадре IN HAND мелкая — при крупном плане риск выше.</li>
+<li><b>Для рекламы:</b> годится как тестовый креатив для таргета/рилс (хук-варианты, сторис). Не годится там, где важна точная конструкция или логотип — нужно 1–2 перегенерации на кадр и отбор человеком.</li>
+<li class="mut">Потрачено: 5 картинок (1 раскадровка + 4 кадра) и 4 видео по 4 сек, без перегенераций.</li>
+</ul></div>
+
+<h2>5. Продукт: вход → выход</h2>
+<div class="card">
+<p><b>Вход от клиента:</b> 2–5 фото товара (белый фон + в интерьере), ссылка на карточку, 3 преимущества, ЦА, что нельзя показывать. Для сложной механики — 1 короткое реальное видео.</p>
+<p><b>Выход:</b> вертикальный ролик 10–20 сек в стиле «снято на телефон» + 3 варианта хука (первые 2 сек/плашка) на каждый ролик — по нашему правилу ТЗ видео.</p>
+<div class="flow"><span>фото товара</span><b>→</b><span>/storyboard (сетка 3×3)</span><b>→</b><span>выбор 4–5 кадров</span><b>→</b><span>кадры 9:16</span><b>→</b><span>/video (i2v по кадрам)</span><b>→</b><span>склейка + хуки</span><b>→</b><span>QA человеком</span></div>
+</div>
+
+<h3>Инструменты (цены проверены 02.11.2026)</h3>
+<div class="scroll"><table>
+<tr><th>Задача</th><th>Инструмент</th><th>Цена</th><th>Вывод</th></tr>
+<tr><td>Кадры/раскадровка</td><td>Nano Banana 2.1 (Gemini API)</td><td>$0.0336 / img 1K <a href="https://ai.google.dev/gemini-api/docs/pricing">↗</a></td><td>Основной: дёшево, держит референс</td></tr>
+<tr><td></td><td>Nano Banana Pro (fal)</td><td>$0.15 / img <a href="https://fal.ai/pricing">↗</a></td><td>Для «героя», где важна точность</td></tr>
+<tr><td></td><td>Seedream 4 (fal)</td><td>$0.03 / img <a href="https://fal.ai/models/fal-ai/bytedance/seedream/v4/text-to-image">↗</a></td><td>Альтернатива, тест на бьюти</td></tr>
+<tr><td>Видео</td><td>Kling 3.0 API, 720p без звука</td><td>$0.084 / сек <a href="https://kling.ai/document-api/pricing/base/video.md">↗</a></td><td><b>Основной</b> по цене/качеству</td></tr>
+<tr><td></td><td>Kling 4.0 API, 720p</td><td>$0.157 / сек <a href="https://kling.ai/document-api/pricing/base/video.md">↗</a></td><td>Сложные кадры с руками</td></tr>
+<tr><td></td><td>Kling Pro (подписка)</td><td>$293.04/год ≈ $24.4/мес, 3000 кредитов; 720p без звука 6 кр/сек <a href="https://klingai.com/membership/membership-plan">↗</a> <a href="https://www.activepieces.com/blog/kling-ai-pricing-plans-and-cost-per-kept-video">↗</a></td><td>Дешевле всего на объёме, но без API</td></tr>
+<tr><td></td><td>MiniMax Hailuo H3, 768p</td><td>$0.08 / сек <a href="https://platform.minimax.io/docs/pricing/overview">↗</a></td><td>Запасной</td></tr>
+<tr><td></td><td>Veo 3.1 (через Runway API)</td><td>$0.20/сек без звука, $0.40 со звуком <a href="https://dev.runway.com/pricing">↗</a></td><td>Премиум; в Gemini API превью закрыто 22.10.2026 <a href="https://ai.google.dev/gemini-api/docs/veo">↗</a></td></tr>
+<tr><td></td><td>Runway (подписка Gen-4.5)</td><td>$28/мес = 2250 кр, Gen-4.5 12 кр/сек <a href="https://runway.com/pricing">↗</a></td><td>Один кабинет на много моделей</td></tr>
+<tr><td></td><td>Higgsfield</td><td>Plus $59/мес, 1200 кр <a href="https://adtoolbench.com/guides/higgsfield-pricing">↗</a></td><td>Удобно руками, через MCP/CLI всегда списывает кредиты <a href="https://higgsfield.ai/creator-hub/help-center/credits/how-credits-work">↗</a></td></tr>
+<tr><td></td><td>Sora 2</td><td>API OpenAI закрыт 24.09.2026 <a href="https://costgoat.com/pricing/sora">↗</a></td><td>Не закладываем</td></tr>
+<tr><td>Склейка</td><td>ffmpeg (в боте) / CapCut (руками)</td><td>ffmpeg бесплатно</td><td>ffmpeg — автосборка + хуки; CapCut — ручная полировка</td></tr>
+</table></div>
+
+<h3>Обёртка: TG-бот для менеджера</h3>
+<div class="card"><ul>
+<li><b>/storyboard</b> + фото → сетка 3×3 и 9 отдельных кадров кнопками «взять / перегенерить».</li>
+<li><b>/video</b> → по выбранным 4–5 кадрам параллельно i2v (Kling API), затем ffmpeg-склейка, плашки, 3 версии хука.</li>
+<li><b>/hooks</b> → 3 варианта первых 2 сек под ЦА (текст по ТЗ-правилу).</li>
+<li>Человек в цикле: ничего не уходит клиенту без апрува менеджера. Хостинг — отдельный дешёвый сервер, не Netlify Functions.</li>
+</ul></div>
+
+<h2>6. Себестоимость одного ролика (15 сек)</h2>
+<p class="mut" style="font-size:14px">Допущения (оценка): 4 клипа × 4–5 сек; с перегенерациями ≈ 40 сек сгенерированного видео и ≈ 10 картинок на ролик. Время человека — оценка, ставка 400 ₴/ч условная, подставить реальную. Курс НБУ 45.35 ₴/$ на 02.11.2026.</p>
+<div class="scroll"><table>
+<tr><th>Вариант</th><th>Картинки</th><th>Видео</th><th>Генерации</th><th>Человек</th><th>Итого</th></tr>
+<tr><td>Подписка Kling Pro + NB 2.1</td><td>$0.34</td><td>≈$2.0 (500 сек/мес на 12 роликов)</td><td>≈ 106 ₴</td><td>200–400 ₴</td><td><b>≈ 300–500 ₴</b></td></tr>
+<tr><td>Kling 3.0 API + NB 2.1</td><td>$0.34</td><td>$3.36</td><td>≈ 168 ₴</td><td>200–400 ₴</td><td><b>≈ 370–570 ₴</b></td></tr>
+<tr><td>Kling 4.0 API + NB Pro</td><td>$1.50</td><td>$6.28</td><td>≈ 353 ₴</td><td>200–400 ₴</td><td><b>≈ 550–750 ₴</b></td></tr>
+<tr><td>Veo 3.1 со звуком + NB Pro</td><td>$1.50</td><td>$16.00</td><td>≈ 794 ₴</td><td>200–400 ₴</td><td><b>≈ 1 000–1 200 ₴</b></td></tr>
+</table></div>
+<p class="mut" style="font-size:14px">Человек: 40–60 мин/ролик вручную сейчас, 20–30 мин с ботом (оценка). Ориентир рынка: живой UGC-ролик в Украине 500–2 500 ₴, сложный 3 000–7 000 ₴ <a href="https://influkr.com/news/skilky-koshtuye-ugc-kontent-2026-84">↗</a>.</p>
+
+<h2>7. Пакеты (предложение, оценка)</h2>
+<div class="pk">
+<div class="card"><div class="tag">Тест</div><div class="price">2 900 ₴</div><div class="mut">3 ролика на 1 товар × 3 хука</div><p style="font-size:14px">Себест. ≈ 1 700–2 250 ₴. Цель — продать пакет. Клиентам на ведении можно зачесть в первый месяц.</p></div>
+<div class="card best"><div class="tag">10 роликов / мес</div><div class="price">9 900 ₴</div><div class="mut">990 ₴/ролик, 3 хука на каждый</div><p style="font-size:14px">Себест. ≈ 5 500 ₴ (вариант Kling 4.0, с ботом) → маржа ≈ 4 400 ₴ (~44%). На подписке Kling — маржа выше.</p></div>
+<div class="card"><div class="tag">20 роликов / мес</div><div class="price">17 900 ₴</div><div class="mut">895 ₴/ролик</div><p style="font-size:14px">Себест. ≈ 11 000 ₴ → маржа ≈ 6 900 ₴ (~38%). На подписке Kling/Runway ≈ 6–10 тыс. ₴ себест.</p></div>
+</div>
+<p class="mut" style="font-size:14px">Для сравнения: средний чек NetWorX за ведение ≈ 20–22 тыс. ₴/мес — пакет 10 роликов ≈ +45–50% к чеку, хорошая допродажа к таргету.</p>
+
+<h2>8. Риски</h2>
+<div class="card"><ul>
+<li><b>Маркировка Meta:</b> Meta может сама повесить «AI info» на объявление, если распознаёт генерацию <a href="https://www.meta.com/help/artificial-intelligence/355108217670024/">↗</a>; обязательное раскрытие — для соц./политической рекламы <a href="https://transparency.meta.com/en-gb/policies/ad-standards/SIEP-advertising/SIEP/">↗</a>. Закладываем в договор, что метка возможна.</li>
+<li><b>Правдивость:</b> ролик не должен показывать того, чего товар не умеет (размер, механизм, комплект). Каждый ролик сверяем с карточкой товара; спорные функции — только реальным футажом.</li>
+<li><b>Искажение товара:</b> форма/логотип/надписи «плывут» — 1–2 перегенерации на кадр, отбор человеком, клиент апрувит перед запуском.</li>
+<li><b>Лица:</b> только сгенерированные вымышленные модели; никаких фото реальных людей и знаменитостей как референса.</li>
+<li><b>Зависимость от вендоров:</b> модели закрываются (Sora API, превью Veo в Gemini API) — держим 2 провайдера.</li>
+</ul></div>
+
+<h2>9. Что нужно от клиента</h2>
+<div class="card"><ul>
+<li>Фото товара: 2–5 шт. (белый фон + интерьер), лучше с разных сторон.</li>
+<li>Карточка товара и 3 главных преимущества; что нельзя показывать/обещать.</li>
+<li>Для механики (складывание, нанесение) — 1 реальное видео 3–5 сек.</li>
+<li>Согласие на AI-формат и возможную метку «AI info».</li>
+</ul></div>
+<p class="mut" style="font-size:12px;margin-top:30px">NetWorX · внутренний тест · все цены вендоров — по ссылкам на 02.11.2026; цены пакетов, время и ставки — оценка.</p>
+</main></body></html>
